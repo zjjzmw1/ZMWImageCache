@@ -59,6 +59,18 @@ ImageCacheSingleton *singleton = nil;
 }
 
 /**
+ *  清除内存缓存
+ */
+///清空内存缓存
++ (BOOL)cleanMemoryCache {
+    int count = (int)[[MemoryCache sharedInstance]memroyArray].count;
+    for (int i = 0; i < count; ++i) {
+        [[MemoryCache sharedInstance]removeObjectForKey:[[[MemoryCache sharedInstance]memroyArray] objectAtIndex:i]];
+    }
+    return YES;
+}
+
+/**
  *  清除本地缓存  默认路径 （Library/Caches/tempCache/....）
  *  @param relativePath 文件的目录替换 tempCache   传 nil  默认 是 tempCache
  */

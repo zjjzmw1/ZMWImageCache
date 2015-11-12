@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MemoryCache.h"
 
 @interface ImageCacheSingleton : NSObject
 
@@ -18,6 +19,12 @@
  */
 ///清空本地缓存
 + (BOOL)cleanDisk;
+
+/**
+ *  清除内存缓存
+ */
+///清空内存缓存
++ (BOOL)cleanMemoryCache;
 
 /**
  *  清除本地缓存  默认路径 （Library/Caches/tempCache）
