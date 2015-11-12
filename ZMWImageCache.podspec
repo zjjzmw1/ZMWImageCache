@@ -2,12 +2,12 @@ Pod::Spec.new do |s|
 
 s.name             = "ZMWImageCache"
 
-s.version          = "1.0.0"
+s.version          = "1.1.0"
 
-s.summary          = "获取网络图片并缓存（不放入内存中）"
+s.summary          = "获取网络图片并缓存（默认带内存缓存，可以用不带的方法）"
 
 s.description      = <<-DESC
- "获取网络图片并缓存（不放入内存中）"
+ "获取网络图片并缓存（默认带内存缓存，可以用不带的方法）"
 DESC
 
 s.homepage         = "https://github.com/zjjzmw1/ZMWImageCache"
